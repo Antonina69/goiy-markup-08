@@ -1,17 +1,17 @@
-.header-nav {
-@extend .centred;
+// .header-nav {
+// @extend .centred;
 }
-.header-nav__list {
+// .header-nav__list {
 @extend .centred;
         
 }
-.header-nav__item {
+// .header-nav__item {
         margin-right: 50px;
 &:last-child {
         margin-right: 0;
     }
 }
-.header-nav__link {
+// .header-nav__link {
     position: relative;
     display: block;
     padding: 32px 0;
@@ -28,7 +28,7 @@
     }
 }
     
-.header-nav__link-current::after {
+// .header-nav__link-current::after {
         content: "";
         position: absolute;
         bottom: 0;
@@ -41,7 +41,7 @@
 
     }
 
-.header-nav__link-current {
+// .header-nav__link-current {
     @extend .header-nav__link;
     color: $color-brand;
 }
