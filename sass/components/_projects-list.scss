@@ -1,0 +1,21 @@
+.projects__list {
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+
+.projects__item {
+    width: 370px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+
+
+
+    &:nth-child(3n) {
+        margin-right: 0;
+    }
+
+    &:nth-child(n+7) {
+        margin-bottom: 0;
+    }
+}

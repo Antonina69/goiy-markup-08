@@ -1,0 +1,18 @@
+.logo {
+    font-family: $logo-font-family;
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    text-align: left;
+    color: $color-logo;
+}
+
+    .logo__accent {
+
+        color: $color-brand;
+    }
+
+.header__logo {
+margin-right: 93px;
+}

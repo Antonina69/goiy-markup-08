@@ -1,0 +1,56 @@
+body {
+    font-family: $main-font-family;
+    font-size: 14px;
+    font-weight: 400;
+    color: $color-primary;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+ul,
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul {
+    padding-left: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 42px;
+    letter-spacing: 0.03em;
+    text-align: center;
+}
+
+.centred {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
