@@ -1,7 +1,7 @@
 .footer {
   font-style: normal;
     background-color: $color-bg-dark;
-
+text-align: center;
     &__logo {
         @extend .logo;
         color: $color-light;
@@ -11,11 +11,11 @@
         }
     }
 }
-.fooret__first-block {
-    align-items: center;
+.footer__first-block {
     @media screen and (min-width: 1200px) {
-    // align-items: start;
-    justify-content: start;
+    
+    text-align: start;
+    
     }
 }
  
