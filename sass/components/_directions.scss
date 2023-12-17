@@ -1,11 +1,17 @@
-// .directions__title {
-    // margin-bottom: 50px;
-    // font-size: 36px;
-    // font-weight: 700;
-    // line-height: 1.17;
-    // letter-spacing: 0.03em;
-    // text-align: center;
-// }
+.directions__title {
+    margin-bottom: 50px;
+    font-size: 36px;
+     font-weight: 700;
+    line-height: 1.17;
+     letter-spacing: 0.03em;
+    text-align: center;
+    @media screen and (max-width: 767px) {
+        display: none;
+    }
+    @media screen and (min-width: 1200px) {
+            font-size: 36px;
+    }
+}
 
 
 

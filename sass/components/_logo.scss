@@ -6,12 +6,24 @@
     letter-spacing: 0.03em;
     text-align: left;
     color: $color-logo;
+@media screen and (min-width: 1140px) {
+    font-size: 26px;
+}
 }
 
     .logo__accent {
     color: $color-brand;
     }
 
-// .header__logo {
-// margin-right: 93px;
-// }
+.header__logo {
+    margin-left: 0;
+    // justify-content: start;
+    align-items: start;
+@media screen and (min-width: 480px) {
+margin-right: 88px;
+}
+@media screen and (min-width: 1140px) {
+margin-right: 93px;
+margin-left: auto;
+}
+}
