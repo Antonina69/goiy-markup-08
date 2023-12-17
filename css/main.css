@@ -353,9 +353,10 @@ body.modal-open {
   text-transform: uppercase;
   color: #FFF;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
   .hero__title {
     font-size: 44px;
+    width: 696px;
   }
 }
 
