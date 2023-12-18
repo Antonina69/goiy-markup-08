@@ -1,6 +1,18 @@
 .buttons-block__list{
-   @extend .centred;
-}
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 40px;
+
+    @media screen and (min-width: 768px) {
+        text-align: center;
+        flex-wrap: nowrap;
+        margin-bottom: 30px;
+    }
+        @media screen and (min-width: 768px) {
+margin-bottom: 50px;}
+        }
+   
+
 
 .buttons-block__btn {
     @extend .btn;
@@ -29,5 +41,13 @@
 
 .buttons-block__item:not(:last-child) {
     margin-right: 8px;
+}
+.buttons-block__item:nth-child(1),
+ .buttons-block__item:nth-child(2),
+ .buttons-block__item:nth-child(3) {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+    }
+
 }
 
