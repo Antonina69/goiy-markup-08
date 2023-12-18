@@ -1,61 +1,167 @@
-.menu-button {
-    display: inline-flex;
-   justify-content: center;
+// .menu-button {
+//     display: inline-flex;
+//    justify-content: center;
+//     align-items: center;
+//     padding: 0;
+//     margin: 0;
+//     width: 40px;
+//     height: 40px;
+//     border: none;
+//     outline: none;
+//     background-color: transparent;
+
+// @media screen and (min-width: 768px) {
+//     display: none;
+// }
+// }
+
+
+/
+//  .menu-container {
+   
+//    display: flex;
+//    flex-direction: column;
+//  display: none;
+//     justify-content: space-between;
+//     position: fixed;
+// //     z-index: 10;
+// top: 100%;
+// //     top:0;
+//  left: 0;
+//  width: 100%;
+// //     // height: 400px;
+//     height: 100%;
+//     background-color: $color-light;
+//    padding: 48px 40px;
+//     text-align: start;
+//     font-size: 40px;
+//    &.is-open {  
+//       display: block;
+//   }    
+//    @media screen and (min-width: 768px) {
+//     display: none;
+//    }
+
+/
+.container {
+    min-width: 320px;
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.page-header {
+    box-shadow: 0px 2px 4px -1px rgb(0 0 0 / 20%),
+        0px 4px 5px 0px rgb(0 0 0 / 14%), 0px 1px 10px 0px rgb(0 0 0 / 12%);
+}
+
+.page-header .container {
+    min-height: 80px;
+    display: flex;
     align-items: center;
+    justify-content: flex-end;
+}
+.header-menu {
+    position: relative;
+    display: flex;
     padding: 0;
     margin: 0;
-    width: 40px;
-    height: 40px;
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    .header-menu {
+        display: none;
+    }
+}
+.header-menu .link {
+    padding: 10px;
+    color: inherit;
+    text-decoration: none;
+}
+
+.header-menu .link:hover,
+.header-menu .link:focus {
+    text-decoration: underline;
+}
+.menu-toggle {
+    position: absolute;
+        top: 16px;
+        right: 16px;
+        color: #fff;
+    min-height: 40px;
+    min-width: 40px;
+     display: flex;
+    
+    align-items: center;
+    justify-content: center;
+
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    // background-color: transparent;
+    cursor: pointer;
     border: none;
-    background-color: transparent;
+    // border-radius: 50%;
+    outline: none;
+}
 
-@media screen and (min-width: 768px) {
-    display: none;
+@media (min-width: 768px) {
+    .menu-toggle {
+        display: none;
+    }
 }
+
+.menu-toggle:hover,
+.menu-toggle:focus {
+    background-color: rgba(0, 0, 0, 0.1);
 }
- .header-menu__icon-close {
-     display: none;
- }
- .menu-button.is-open .header-menu__icon-close {
-     display: none;
- }
-.menu-button.is-open .header-menu__icon-open {
-    display: block;
-}
+
 .menu-container {
-   
-    display: flex;
-    flex-direction: column;
- display: none;
-    justify-content: space-between;
     position: fixed;
-    z-index: 10;
-    // top: 100%;
-    top:0;
+    top: 0;
     left: 0;
-    width: 100%;
-    // height: 400px;
-    height: 100%;
-    background-color: $color-light;
-    padding: 48px 40px;
-    text-align: start;
-    font-size: 40px;
-   &.is-open {
+    width: 100vw;
+    height: 100vh;
+    padding: 32px;
+    // background-color: #3f51b5;
+    border-color: #fff;
+    z-index: 999;
+
+    transform: translateX(100%);
+    transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+    transform: translateX(0);
+}
+
+// .menu-container .menu-toggle {
+//     position: absolute;
+//     top: 16px;
+//     right: 16px;
+//     color: #fff;
+// }
+
+.mobile-menu {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.mobile-menu .link {
     display: block;
-   } 
-   @media screen and (min-width: 768px) {
-    display: none;
-   }
-
+    padding: 10px;
+    color: #fff;
+    text-decoration: none;
 }
 
-.menu-button:hover .header-menu__icon-open,
-.menu-button:focus .header-menu__icon-open {
-    fill: $color-brand;
-}
-
-.menu-button:hover .header-menu__icon-close, 
-.menu-button:focus .header-menu__icon-close {
+.menu-toggle:hover .header-menu__icon-open,
+.menu-toggle:focus .header-menu__icon-open,
+.menu-toggle:hover .header-menu__icon-close, 
+.menu-toggle:focus .header-menu__icon-close {
     fill: $color-brand;
 }
 .mobile-menu__item:not(:last-child) {
@@ -122,4 +228,10 @@ color: #2196F3;
     line-height: 22px;
     letter-spacing: 0.36px;
 }
+// .menu-close-button {
+//   @extend .menu-button;
+//   position: absolute;
+//   top: 10px;
+//   right: 15px;
+// }
 

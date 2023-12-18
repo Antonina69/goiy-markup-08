@@ -334,11 +334,27 @@ body.modal-open {
   margin-left: auto;
   margin-right: auto;
   background-color: #C4C4C4;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img\ \(2\)\ \(1\).jpg);
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img\ \(2\)\ \(1\).jpg);
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+@media screen and (min-width: 480px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(./CSS/);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(./CSS/);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img\ \(2\)\ \(1\).jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img\ \(2\)\ \(1\).jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url(../images/Img\ \(2\)\ \(1\).jpg);
+    background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/Img\ \(2\)\ \(1\).jpg);
+  }
 }
 
 .hero__title {
@@ -396,11 +412,13 @@ body.modal-open {
   left: 0;
   width: 100%;
   height: 100%;
+  z-index: 3;
+  overflow-y: scroll;
   background-color: rgba(0, 0, 0, 0.2);
   -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .backdrop {
     padding-top: 95px;
     padding-left: 15px;
@@ -415,7 +433,7 @@ body.modal-open {
 
 .backdrop__modal {
   display: inline-block;
-  width: 450px;
+  max-width: 450px;
   background-color: #FFF;
   border-radius: 4px;
   opacity: 1;
@@ -434,6 +452,7 @@ body.modal-open {
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
