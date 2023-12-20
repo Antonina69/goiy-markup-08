@@ -3,6 +3,7 @@
     padding: 30px;
     padding-bottom: 24px;
     background-color: $color-light; 
+    margin-top: -4px;
     @media screen and (min-width: 1200px) {
         padding-bottom: 30px;
     }
@@ -17,7 +18,9 @@
 .team-card__item {
     @media screen and (max-width: 767px) {
         width: 100%;
+        margin-bottom: 30px;
 }
+
  @media screen and (min-width: 768px) {
     // width: calc(100% - 2 * 30) / 2 ;
     flex-basis: calc(50% - 30px);
@@ -29,6 +32,11 @@
     // width: calc(25% - 30px);
     width: 270px;
 }
+}
+.team-card__item:last-child {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 0
+    };
 }
 
 

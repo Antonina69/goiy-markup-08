@@ -863,6 +863,7 @@ body.modal-open {
   padding: 30px;
   padding-bottom: 24px;
   background-color: #FFF;
+  margin-top: -4px;
   height: auto;
   -webkit-box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706), 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
           box-shadow: 0px 2px 1px 0px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.1411764706), 0px 1px 3px 0px rgba(0, 0, 0, 0.1215686275);
@@ -876,6 +877,7 @@ body.modal-open {
 @media screen and (max-width: 767px) {
   .team-card__item {
     width: 100%;
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -889,6 +891,12 @@ body.modal-open {
 @media screen and (min-width: 1200px) {
   .team-card__item {
     width: 270px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .team-card__item:last-child {
+    margin-bottom: 0;
   }
 }
 
@@ -1043,8 +1051,8 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
-  .projects__list:not(:last-child) {
+@media screen and (max-width: 767px) {
+  .projects__item:not(:last-child) {
     margin-bottom: 30px;
   }
 }
@@ -1132,6 +1140,11 @@ body.modal-open {
   letter-spacing: 0.03em;
   text-align: left;
   color: #757575;
+}
+
+.projects-card__image {
+  width: 100%;
+  height: auto;
 }
 
 .buttons-block__list {
@@ -1521,6 +1534,7 @@ body.modal-open {
   font-weight: 500;
   line-height: normal;
   letter-spacing: 0.8px;
+  padding: 10px;
 }
 
 .mobile-menu__link:hover,
@@ -1545,6 +1559,7 @@ body.modal-open {
   font-style: normal;
   font-weight: 500;
   line-height: normal;
+  padding: 10px;
 }
 
 .mobile-contact__link:hover,
@@ -1586,6 +1601,7 @@ body.modal-open {
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0.36px;
+  padding: 10px;
 }
 
 @media screen and (min-width: 768px) {
