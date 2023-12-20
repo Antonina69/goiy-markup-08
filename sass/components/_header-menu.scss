@@ -64,21 +64,8 @@
 
 
 
-.header-menu {
-    position: relative;
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    align-items: flex-end;
 
-@media (max-width: 767px) {
-     display: block;
- }
- @media (min-width: 768px) {
-    display: none;
- }
- }
+
 
 
 
