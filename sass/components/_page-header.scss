@@ -12,9 +12,10 @@
 
 .header__container {
         height: 60px;
+        display: flex;
         @media screen and (min-width: 768px) {
          height: 80px;
-        display: flex;
+        // display: flex;
         align-items: center;
         justify-content:space-between;
                
