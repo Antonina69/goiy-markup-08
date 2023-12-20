@@ -676,7 +676,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .benefits__item:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -715,7 +715,7 @@ body.modal-open {
 }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .benefits__thumb {
-    width: 100%;
+    width: 450px;
     height: 120px;
     padding: 25px 190px;
   }
@@ -847,7 +847,7 @@ body.modal-open {
   }
 }
 
-@media screen and (min-width: 480px) and (max-width: 767px) {
+@media screen and (max-width: 767px) {
   .team__item:not(:last-child) {
     margin-bottom: 30px;
   }

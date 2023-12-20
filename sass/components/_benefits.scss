@@ -14,7 +14,7 @@
 }
 
 .benefits__item:not(:last-child) {
-    @media screen and (min-width: 480px) and (max-width: 767px) {
+    @media screen and (max-width: 767px) {
     margin-bottom: 30px;
     }
 }
@@ -30,7 +30,7 @@
     
 }
 }
-   
+
 
 .benefits__thumb {
     align-items: center;
@@ -43,7 +43,7 @@
         padding-top: 25px;
         padding-bottom: 25px;
     @media screen and (min-width: 480px)and (max-width: 767px) {
-    width: 100%;
+    width: 450px;
     height: 120px;
     padding: 25px 190px;
     }
@@ -84,8 +84,6 @@
     color: $color-secondary;
 }
 .benefits__icon {
-// margin-right: auto;
-//    margin-left: auto;
 display: flex;
 justify-content: center;
 align-items: center;
