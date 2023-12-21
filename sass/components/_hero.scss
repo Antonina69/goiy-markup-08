@@ -12,41 +12,45 @@
         @media screen and (min-width: 480px) {
             padding-top: 118px;
                 padding-bottom: 118px;
-// background-image: linear-gradient(to right, #2F303A66, #2F303A66),
-//         url(./images/Header imgsm.jpg);
-    }
-
-                @media screen and (min-width: 480px) and (min-device-pixel-ratio: 2),
+            }
+                @media screen and (max-width: 480px) {
+background-image: linear-gradient(to right, #2F303A66, #2F303A66),
+        url(../images/imgHerosm.jpg);
+    
+                    @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-            // background-image: linear-gradient(to right, #2F303A66, #2F303A66),
-            //         url(./images/Header imgsm@2x.jpg);
+            background-image: linear-gradient(to right, #2F303A66, #2F303A66),
+                    url(../images/imgHerosm@2x.jpg);
             }
-        @media screen and (min-width: 768px) {
-        // background-image: linear-gradient(to right, #2F303A66, #2F303A66),
-        //         url(./images/Header imgmd.jpg);
         }
-                @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2),
+        @media screen and (min-width: 480px) and (max-width: 767px) {
+        background-image: linear-gradient(to right, #2F303A66, #2F303A66),
+                url(../images/imgHeromd.jpg);
+        
+                @media screen  and (min-device-pixel-ratio: 2),
                     (min-resolution: 192dpi),
                     (min-resolution: 2dppx) {
-                        // background-image: linear-gradient(to right, #2F303A66, #2F303A66),
-                        //     url(./images/Header imgmd@2x.jpg);
+                        background-image: linear-gradient(to right, #2F303A66, #2F303A66),
+                            url(../images/imgHeromd@2x.jpg);
                     }
+                }
     
-            @media screen and (min-width: 1200px) {
+            @media screen and (min-width: 768px) {
                 padding-top: 200px;
                 padding-bottom: 200px;
 background-image: linear-gradient(to right, #2F303A66, #2F303A66),
-        url(./images/images/Imglg.jpg);
-            }
-        @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2),
+        url(../images/imgHerolg.jpg);
+            
+        @media screen and (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
-                // background-image: linear-gradient(to right, #2F303A66, #2F303A66),
-                //     url(./images/Header imglg@2x.jpg);
+                background-image: linear-gradient(to right, #2F303A66, #2F303A66),
+                    url(../images/imgHerolg@2x.jpg);
             }
- }
-   
+        }
+
+    }
 
 
 .hero__title {
