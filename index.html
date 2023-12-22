@@ -343,34 +343,16 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <picture>
-                <source
-                  media="(min-width:1200px)"
-                  srcset="
-                    ./images/imgIgorlg.jpg    1x,
-                    ./images/imgIgorlg@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
-                <source
-                  media="(min-width:768px)"
-                  srcset="
-                    ./images/imgIgormd.jpg    1x,
-                    ./images/imgIgormd@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
-                <source
-                  media="(max-width:767px)"
-                  srcset="
-                    ./images/imgIgorsm.jpg    1x,
-                    ./images/imgIgorsm@2x.jpg 2x
-                  "
-                  type="image/jpg"
-                />
-              </picture>
               <img
                 class="team-card__image"
+                srcset="
+                  ./images/imgIgorsm.jpg w450px,
+                  ./images/imgIgorsm@2x.jpg w900px,
+                  ./images/imgIgormd.jpg w354px,
+                  ./images/imgIgormd@2x.jpg w708px,
+                  ./images/imgIgorlg.jpg w270px,
+                  ./images/imgIgorlg@2x.jpg w540px
+                "
                 src="./images/Ігор.jpg"
                 alt="Ігор Дем'яненко"
                 sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw, 100vw"
