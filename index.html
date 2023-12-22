@@ -343,20 +343,37 @@
           <h2 class="team__title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img
-                class="team-card__image"
-                srcset="
-                  ./images/imgIgorsm.jpg w450px,
-                  ./images/imgIgorsm@2x.jpg w900px,
-                  ./images/imgIgormd.jpg w354px,
-                  ./images/imgIgormd@2x.jpg w708px,
-                  ./images/imgIgorlg.jpg w270px,
-                  ./images/imgIgorlg@2x.jpg w540px
-                "
-                src="./images/Ігор.jpg"
-                alt="Ігор Дем'яненко"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw, 100vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/imgIgorlg.jpg    1x,
+                    ./images/imgIgorlg@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/imgIgormd.jpg          1x,
+                    ./images/imgIgormd@2x.jpg2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/imgIgorsm.jpg   1x,
+                    ./images/imgIgorsm2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="team-card__image"
+                  src="./images/Ігор.jpg"
+                  alt="Ігор Дем'яненко"
+                />
+              </picture>
 
               <div class="team-card__label">
                 <h3 class="team-card__name">Ігор Дем'яненко</h3>
@@ -434,20 +451,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team-card__image"
-                srcset="
-                  ./images/imgOlgasm.jpg w450px,
-                  ./images/imgOlgasm@2x.jpg w900px,
-                  ./images/imgOlgamd.jpg w354px,
-                  ./images/imgOlgamd@2x.jpg w708px,
-                  ./images/imgOlgalg.jpg w270px,
-                  ./images/imgOlgalg@2x.jpg w540px
-                "
-                src="./images/Ольга.jpg"
-                alt="Ольга Рєпіна"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw, 100vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/imgOlgalg.jpg    1x,
+                    ./images/imgOlgalg@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/imgOlgamd.jpg          1x,
+                    ./images/imgOlgamd@2x.jpg2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/imgOlgasm.jpg   1x,
+                    ./images/imgOlgasm2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="team-card__image"
+                  src="./images/Ольга.jpg"
+                  alt="Ольга Рєпіна"
+                />
+              </picture>
 
               <div class="team-card__label">
                 <h3 class="team-card__name">Ольга Рєпіна</h3>
@@ -526,20 +560,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team-card__image"
-                srcset="
-                  ./images/imgMycolasm.jpg w450px,
-                  ./images/imgMycolasm@2x.jpg w900px,
-                  ./images/imgMycolamd.jpg w354px,
-                  ./images/imgMycolamd@2x.jpg w708px,
-                  ./images/imgMycolalg.jpg w270px,
-                  ./images/imgMycolalg@2x.jpg w540px
-                "
-                src="./images/Микола.jpg"
-                alt="Микола Тарасов"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw, 100vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/imgMycolalg.jpg    1x,
+                    ./images/imgMycolalg@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/imgMycolamd.jpg          1x,
+                    ./images/imgMycolamd@2x.jpg2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/imgMycolasm.jpg   1x,
+                    ./images/imgMycolasm2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  src="./images/Микола.jpg"
+                  alt="Микола Тарасов"
+                  class="team-card__image"
+                />
+              </picture>
 
               <div class="team-card__label">
                 <h3 class="team-card__name">Микола Тарасов</h3>
@@ -617,20 +668,37 @@
               </div>
             </li>
             <li class="team__item">
-              <img
-                class="team-card__image"
-                srcset="
-                  ./images/imgMyhailosm.jpg w450px,
-                  ./images/imgMyhailosm@2x.jpg w900px,
-                  ./images/imgMyhailomd.jpg w354px,
-                  ./images/imgMyhailomd@2x.jpg w708px,
-                  ./images/imgMyhailolg.jpg w270px,
-                  ./images/imgMyhailolg@2x.jpg w540px
-                "
-                src="./images/Михайло.jpg"
-                alt="Михайло Єрмаков"
-                sizes="(min-width: 1200px) 25vw, (min-width: 768px) 50vw, (max-width: 767px) 100vw, 100vw"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/imgMyhailolg.jpg    1x,
+                    ./images/imgMyhailolg@2x.jpg 2x
+                  "
+                  media="(min-width:1200px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/imgMyhailomd.jpg          1x,
+                    ./images/imgMyhailomd@2x.jpg2x.jpg 2x
+                  "
+                  media="(min-width:768px)"
+                  type="image/jpeg"
+                />
+                <source
+                  srcset="
+                    ./images/imgMyhailosm.jpg   1x,
+                    ./images/imgMyhailosm2x.jpg 2x
+                  "
+                  media="(max-width:767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="team-card__image"
+                  src="./images/Михайло.jpg"
+                  alt="Михайло Єрмаков"
+                />
+              </picture>
 
               <div class="team-card__label">
                 <h3 class="team-card__name">Михайло Єрмаков</h3>
