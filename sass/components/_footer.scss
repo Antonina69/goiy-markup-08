@@ -1,11 +1,7 @@
 .footer__wrapper {
-    // justify-content: space-between;
-    // align-items: center;
-    
-
+    justify-content: space-between;
 @media screen and (min-width: 768px) {
    display: flex; 
-   justify-content: start;
    align-items: baseline;
 }
 }
@@ -15,8 +11,6 @@
  @media screen and (min-width: 1200px) {
         display: flex;
         align-items: baseline;
-        // margin-right: auto;
-    // margin-left: auto;
     justify-content: space-between;
 }
     
@@ -24,9 +18,5 @@
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
-    @media screen and (min-width: 1200px) {
-        padding-top: 94px;
-        padding-bottom: 94px;
-    }
-}
+   }
 
