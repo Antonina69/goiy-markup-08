@@ -17,12 +17,12 @@
 
 .header__logo {
     margin-left: 0;
-    // justify-content: start;
+ justify-content: start;
     align-items: start;
 @media screen and (min-width: 480px) {
 margin-right: 88px;
 }
-@media screen and (min-width: 1140px) {
+@media screen and (min-width: 1200px) {
 margin-right: 93px;
 margin-left: auto;
 }
