@@ -1689,8 +1689,8 @@ img {
 
 .menu-toggle .icon-open,
 .menu-toggle .icon-close {
-  -webkit-transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .menu-toggle:hover .icon-open,
