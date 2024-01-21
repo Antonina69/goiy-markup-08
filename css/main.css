@@ -1770,18 +1770,30 @@ img {
           justify-content: start;
 }
 
-.mobile-socials__item:not(:last-child) {
-  margin-right: 20px;
+@media screen and (min-width: 320px) and (min-width: 479px) {
+  .mobile-socials__item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+@media screen and (min-width: 480px) {
+  .mobile-socials__item:not(:last-child) {
+    margin-right: 20px;
+  }
 }
 
 .mobile-socials__link {
   color: #2196F3;
-  font-size: 18px;
+  font-size: 16px;
   font-style: normal;
   font-weight: 500;
   line-height: 22px;
   letter-spacing: 0.36px;
   padding: 10px;
+}
+@media screen and (min-width: 480px) {
+  .mobile-socials__link {
+    font-size: 18px;
+  }
 }
 
 .footer__wrapper {
