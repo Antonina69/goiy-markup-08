@@ -34,6 +34,7 @@ margin-left: auto;
 .footer__btn {
     @extend .btn;
     display: flex;
+    align-items: center;
     padding: 10px 28px;
     width: 200px;
     height: 50px;

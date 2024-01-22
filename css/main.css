@@ -995,6 +995,7 @@ img {
     margin: 15px;
   }
 }
+
 .team-card__label {
   display: block;
   padding: 30px;
@@ -1551,6 +1552,9 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 10px 28px;
   width: 200px;
   height: 50px;
