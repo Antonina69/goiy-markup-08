@@ -73,7 +73,6 @@
           type="button"
           class="button menu-toggle js-open-menu"
           aria-expanded="false"
-          aria-controls="menu-container"
           data-menu-button
         >
           <svg
@@ -98,7 +97,11 @@
           <div class="mobile-wrapper">
             <ul class="mobile-menu__list">
               <li class="mobile-menu__item">
-                <a class="mobile-menu__link mobile-menu__link-current" href="./index.html">Студія</a>
+                <a
+                  class="mobile-menu__link mobile-menu__link-current"
+                  href="./index.html"
+                  >Студія</a
+                >
               </li>
               <li class="mobile-menu__item">
                 <a class="mobile-menu__link" href="./portfolio.html"
@@ -324,7 +327,10 @@
             <li class="directions__item">
               <picture>
                 <source
-                  srcset="./images/testing.jpg 1x, ./images/imgtesting@2x.jpg 2x"
+                  srcset="
+                    ./images/testing.jpg       1x,
+                    ./images/imgtesting@2x.jpg 2x
+                  "
                   media="(min-width:1200px)"
                   type="image/jpeg"
                 />
