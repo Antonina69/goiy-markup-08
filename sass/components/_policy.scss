@@ -1,7 +1,13 @@
 .policy {
     position: relative;
     @extend .centred;
-    margin-bottom: 30px;
+    @media screen and (max-width: 479px) {
+            margin-bottom: 12px;
+        }
+    
+        @media screen and (min-width: 480px) {
+            margin-bottom: 30px;
+        }
 }
 
 .policy__custom-checkbox {
@@ -32,15 +38,19 @@
     }
    
 .policy__text {
-    font-size: 12px;
     font-weight: 400;
     line-height: 1.71;
     letter-spacing: 0.03em;
     text-align: left;
     color: $color-secondary;
+    @media screen and (max-width: 479px) {
+            font-size: 10px;
+    }
+            @media screen and (min-width: 480px) {
+                    font-size: 12px;
+            }
 @media screen and (min-width: 1200px) {
-    font-size: 14
-    px;
+    font-size: 14px;
 }
     }
 

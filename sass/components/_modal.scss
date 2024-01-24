@@ -1,31 +1,55 @@
 .modal__title {
-    font-size: 20px;
     font-weight: 700;
     line-height: 1.15;
     letter-spacing: 0.03em;
     text-align: center;
+    @media screen and (max-width: 479px) {
+    font-size: 12px;
+    }
+        @media screen and (min-width: 480px) {
+         font-size: 20px;
+        }
     
 }
 .modal {
+    @media screen and (max-width: 479px) {
+    margin-top: 8px;
+        }
+    
+        @media screen and (min-width: 480px) {
     margin-top: 12px;
+        }
 }
 
 .modal__label {
     position: relative;
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
-    font-size: 12px;
     font-weight: 400;
     line-height: 1.16;
     letter-spacing: 0.01em;
     text-align: left;
     color: $color-secondary;
+    @media screen and (max-width: 479px) {
+            font-size: 10px;
+            margin-bottom: 8px;
+        }
+    
+        @media screen and (min-width: 480px) {
+            font-size: 12px;
+            margin-bottom: 10px;
+        }
 
 
     &:nth-child(4) {
+       
+         @media screen and (max-width: 479px) {
+        margin-bottom: 12px;
+        }
+            @media screen and (min-width: 480px) {
         margin-bottom: 20px;
     }
+}
 }
 
 .modal__input {
@@ -33,11 +57,20 @@
     border-radius: 4px;
     margin-left: 0;
     margin-top: 4px;
-    padding: 11px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    padding-left: 42px;
     outline: none;
-    height: 40px;
+    @media screen and (max-width: 479px) {
+            height: 32px;
+            padding: 10px;
+            padding-left: 32px;
+        }
+    
+        @media screen and (min-width: 480px) {
+            height: 40px;
+            padding: 12px;
+            padding-left: 42px;
+        }
+    
 
     &:hover,
     &:focus {
@@ -49,25 +82,38 @@
 
 
 .modal__input-area {
-    height: 120px;
-    padding: 12px 16px;
     margin-top: 4px;
     border: 1px solid #21212133;
     border-radius: 4px;
     transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     resize: none;
     outline: none;
+    @media screen and (max-width: 479px) {
+        height: 68px;
+        padding: 10px 12px;
+        }
+    
+        @media screen and (min-width: 480px) {
+            height: 120px;
+            padding: 12px 16px;
+        }
+    
 
 
     &::placeholder {
-
-        font-size: 12px;
         font-weight: 400;
         line-height: 1.16;
         letter-spacing: 0.01em;
         text-align: left;
         justify-content: start;
         color: #75757580;
+        @media screen and (max-width: 479px) {
+                font-size: 10px;
+            }
+        
+            @media screen and (min-width: 480px) {
+                font-size: 12px;
+            }
     }
     
 
@@ -79,10 +125,17 @@
 .modal__icon-placeholder {
     display: flex;
     position: absolute;
-    bottom: 11px;
-    left: 12px;
-    fill: #212121;
+     fill: #212121;
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    @media screen and (max-width: 479px) {
+            bottom: 8px;
+                left: 12px;
+        }
+    
+        @media screen and (min-width: 480px) {
+            bottom: 11px;
+                left: 12px;
+        }
 
     .modal__input:hover~&,
     .modal__input:focus~& {
