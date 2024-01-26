@@ -75,9 +75,11 @@
             height: 40px;
             padding: 12px;
             padding-left: 42px;
+            @media (orientation:landscape) {
+                height: 32px;
         }
     
-
+    }
     &:hover,
     &:focus {
         border-color: $color-brand;
