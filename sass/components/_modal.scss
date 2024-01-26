@@ -85,7 +85,13 @@
         border-color: $color-brand;
     }
 }
-
+.wrap-pol-btn {
+    @media (orientation:landscape) { 
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+}
 
 
 

@@ -703,6 +703,20 @@ img {
   border-color: #2196F3;
 }
 
+@media (orientation: landscape) {
+  .wrap-pol-btn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
 .modal__input-area {
   margin-top: 4px;
   border: 1px solid rgba(33, 33, 33, 0.2);
