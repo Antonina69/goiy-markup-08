@@ -493,11 +493,6 @@ img {
     height: 50px;
   }
 }
-@media screen and (min-width: 480px) and (orientation: landscape) {
-  .modal__submit-btn {
-    padding: 8px 40px;
-  }
-}
 
 .backdrop {
   position: fixed;
@@ -529,11 +524,6 @@ img {
     padding-right: 15px;
   }
 }
-@media screen and (min-width: 480px) and (max-width: 767px) and (orientation: landscape) {
-  .backdrop {
-    padding-top: 0;
-  }
-}
 .backdrop.is-hidden {
   visibility: hidden;
   opacity: 0;
@@ -543,6 +533,7 @@ img {
 .backdrop__modal {
   display: inline-block;
   position: relative;
+  width: 450px;
   background-color: #FFF;
   border-radius: 4px;
   opacity: 1;
@@ -559,22 +550,9 @@ img {
     padding: 20px;
   }
 }
-@media screen and (max-width: 479px) and (orientation: landscape) {
-  .backdrop__modal {
-    width: 100vw;
-    height: 100vh;
-  }
-}
 @media screen and (min-width: 480px) {
   .backdrop__modal {
     padding: 40px;
-  }
-}
-@media screen and (min-width: 480px) and (orientation: landscape) {
-  .backdrop__modal {
-    width: 100vw;
-    height: 100vh;
-    padding: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -622,20 +600,9 @@ img {
     margin-top: 8px;
   }
 }
-@media screen and (max-width: 479px) and (orientation: landscape) {
-  .modal {
-    padding: 0;
-  }
-}
 @media screen and (min-width: 480px) {
   .modal {
     margin-top: 12px;
-  }
-}
-@media screen and (min-width: 480px) and (orientation: landscape) {
-  .modal {
-    padding: 0;
-    margin-top: 4px;
   }
 }
 
@@ -676,11 +643,6 @@ img {
     margin-bottom: 20px;
   }
 }
-@media screen and (min-width: 480px) and (orientation: landscape) {
-  .modal__label:nth-child(4) {
-    margin-bottom: 4px;
-  }
-}
 
 .modal__input {
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -705,28 +667,8 @@ img {
     padding-left: 42px;
   }
 }
-@media screen and (min-width: 480px) and (orientation: landscape) {
-  .modal__input {
-    height: 32px;
-  }
-}
 .modal__input:hover, .modal__input:focus {
   border-color: #2196F3;
-}
-
-@media (orientation: landscape) {
-  .wrap-pol-btn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
 }
 
 .modal__input-area {
@@ -748,11 +690,6 @@ img {
   .modal__input-area {
     height: 120px;
     padding: 12px 16px;
-  }
-}
-@media (orientation: landscape) {
-  .modal__input-area {
-    height: 32px;
   }
 }
 .modal__input-area::-webkit-input-placeholder {
@@ -893,19 +830,9 @@ img {
     margin-bottom: 12px;
   }
 }
-@media screen and (max-width: 479px) and (orientation: landscape) {
-  .policy {
-    margin-bottom: 0;
-  }
-}
 @media screen and (min-width: 480px) {
   .policy {
     margin-bottom: 30px;
-  }
-}
-@media screen and (min-width: 480px) and (orientation: landscape) {
-  .policy {
-    margin-bottom: 0;
   }
 }
 
@@ -2014,28 +1941,6 @@ img {
   }
 }
 
-.mobile-menu__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media (orientation: portrait) {
-  .mobile-menu__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-@media (orientation: landscape) {
-  .mobile-menu__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
-}
-
 .mobile-menu__link {
   color: #212121;
   font-style: normal;
@@ -2063,25 +1968,6 @@ img {
 
 .mobile-contact__list {
   margin-top: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-@media (orientation: portrait) {
-  .mobile-contact__list {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-  }
-}
-@media (orientation: landscape) {
-  .mobile-contact__list {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-  }
 }
 
 @media screen and (max-width: 479px) {

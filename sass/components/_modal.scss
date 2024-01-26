@@ -16,15 +16,10 @@
 .modal {
     @media screen and (max-width: 479px) {
     margin-top: 8px;
-    @media (orientation:landscape) { padding: 0;
-    } 
-        }
+   }
     
         @media screen and (min-width: 480px) {
     margin-top: 12px;
-    @media (orientation:landscape) { padding: 0;
-        margin-top: 4px;
-    } 
         }
 }
 
@@ -55,9 +50,6 @@
         }
             @media screen and (min-width: 480px) {
         margin-bottom: 20px;
-        @media (orientation:landscape) {
-            margin-bottom: 4px;  
-        }
     }
 }
 }
@@ -79,24 +71,13 @@
             height: 40px;
             padding: 12px;
             padding-left: 42px;
-            @media (orientation:landscape) {
-                height: 32px;
-        }
-    
-    }
+ }
     &:hover,
     &:focus {
         border-color: $color-brand;
     }
 }
-.wrap-pol-btn {
-    @media (orientation:landscape) { 
-        display: flex;
-        text-align: center;
-        align-items:center;
-        justify-content: space-between;
-    }
-}
+
 
 
 
@@ -115,9 +96,6 @@
         @media screen and (min-width: 480px) {
             height: 120px;
             padding: 12px 16px;
-        }
-        @media (orientation:landscape) {
-            height: 32px;  
         }
 
 
