@@ -45,7 +45,7 @@
 .backdrop__modal {
     display: inline-block;
     position: relative;
-        width: 450px;
+        // width: 450px;
         background-color: #FFF;
         border-radius: 4px;
         opacity: 1;
@@ -56,9 +56,16 @@
         @media screen and (max-width: 479px) {
             width: 100%;
             padding: 20px;
+             @media (orientation:landscape) { width: 100vw;
+                height: 100vh;
+             } 
         }
                 @media screen and (min-width: 480px) {
                 padding: 40px;
+                @media (orientation:landscape) { width: 100vw;
+                    height: 100vh;
+                    padding: 20px;
+                 } 
                 }
 
     @media screen and (min-width: 768px) {
@@ -66,7 +73,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
-    // width: 450px;
+ width: 450px;
 }
  @media screen and (min-width: 1200px) {
     width: 528px;

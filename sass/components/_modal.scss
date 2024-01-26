@@ -16,10 +16,14 @@
 .modal {
     @media screen and (max-width: 479px) {
     margin-top: 8px;
+    @media (orientation:landscape) { padding: 0;
+    } 
         }
     
         @media screen and (min-width: 480px) {
     margin-top: 12px;
+    @media (orientation:landscape) { padding: 0;
+    } 
         }
 }
 

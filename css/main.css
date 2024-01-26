@@ -538,7 +538,6 @@ img {
 .backdrop__modal {
   display: inline-block;
   position: relative;
-  width: 450px;
   background-color: #FFF;
   border-radius: 4px;
   opacity: 1;
@@ -555,9 +554,22 @@ img {
     padding: 20px;
   }
 }
+@media screen and (max-width: 479px) and (orientation: landscape) {
+  .backdrop__modal {
+    width: 100vw;
+    height: 100vh;
+  }
+}
 @media screen and (min-width: 480px) {
   .backdrop__modal {
     padding: 40px;
+  }
+}
+@media screen and (min-width: 480px) and (orientation: landscape) {
+  .backdrop__modal {
+    width: 100vw;
+    height: 100vh;
+    padding: 20px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -567,6 +579,7 @@ img {
     left: 50%;
     -webkit-transform: translate(-50%, -50%) scale(1);
             transform: translate(-50%, -50%) scale(1);
+    width: 450px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -604,9 +617,19 @@ img {
     margin-top: 8px;
   }
 }
+@media screen and (max-width: 479px) and (orientation: landscape) {
+  .modal {
+    padding: 0;
+  }
+}
 @media screen and (min-width: 480px) {
   .modal {
     margin-top: 12px;
+  }
+}
+@media screen and (min-width: 480px) and (orientation: landscape) {
+  .modal {
+    padding: 0;
   }
 }
 
