@@ -88,7 +88,8 @@
 .wrap-pol-btn {
     @media (orientation:landscape) { 
         display: flex;
-        align-items: center;
+        text-align: center;
+        align-items:center;
         justify-content: space-between;
     }
 }

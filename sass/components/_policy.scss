@@ -3,10 +3,16 @@
     @extend .centred;
     @media screen and (max-width: 479px) {
             margin-bottom: 12px;
+            @media (orientation:landscape) {
+                margin-bottom: 0;
+            }
         }
     
         @media screen and (min-width: 480px) {
             margin-bottom: 30px;
+            @media (orientation:landscape) {
+                margin-bottom: 0;
+            }
         }
 }
 

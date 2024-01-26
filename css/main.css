@@ -493,6 +493,11 @@ img {
     height: 50px;
   }
 }
+@media screen and (min-width: 480px) and (orientation: landscape) {
+  .modal__submit-btn {
+    padding: 8px 40px;
+  }
+}
 
 .backdrop {
   position: fixed;
@@ -708,6 +713,7 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    text-align: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -881,9 +887,19 @@ img {
     margin-bottom: 12px;
   }
 }
+@media screen and (max-width: 479px) and (orientation: landscape) {
+  .policy {
+    margin-bottom: 0;
+  }
+}
 @media screen and (min-width: 480px) {
   .policy {
     margin-bottom: 30px;
+  }
+}
+@media screen and (min-width: 480px) and (orientation: landscape) {
+  .policy {
+    margin-bottom: 0;
   }
 }
 
